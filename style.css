@@ -1,0 +1,87 @@
+body,
+html {
+	width: 100%;
+	background-image: rgb(255,255,255);
+    box-shadow: inset 0px 0px 1rem 0.2rem;
+	background-size: 100% auto;
+}
+
+.page{
+    display: flex;
+    flex-direction:column;
+    padding: 2rem;
+        
+}
+
+.header{
+    display: flex;
+    align-items:center;
+    height: 2rem;
+    margin-bottom: 2rem;
+    background-color: rgb(161, 161, 240);
+}
+
+.header__title{
+    height: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    color: rgba(151, 71, 255, 1);
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.searchbar{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    border: 0.2rem solid rgb(161, 161, 240);
+}
+
+.searchbar_search{
+    background-color: rgba(151, 71, 255, 1);
+    margin: 0.5rem;
+    width: 16rem;
+    height: 2rem;
+}
+
+.searchbar_filters{
+    background-color: rgba(151, 71, 255, 1);
+    margin: 0.5rem 0rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.searchbar_loading{
+    display: flex;
+    align-items: center;
+    background-color: rgba(151, 71, 255, 1);
+    margin: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 2px solid rgba(151, 71, 255, 1);
+}
+
+.content_header{
+    flex: 0 0 3rem;
+    background-color: rgba(151, 71, 255, 1);
+} 
+
+.content_list{
+    flex: auto; 
+    background-color:rgb(161, 161, 240);
+    height: 60vh;
+}
+
+.content_footer{
+    flex: 0 0 3rem;
+    background-color: rgba(151, 71, 255, 1);
+}
