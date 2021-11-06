@@ -1,0 +1,216 @@
+body,
+html {
+  width: 100%;
+  background-image: rgb(255, 255, 255);
+  box-shadow: inset 0px 0px 1rem 0.2rem;
+  background-size: 100% auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  --color-text-color-background: rgb(255, 255, 255);
+  --text-color-without-background: rgb(69, 157, 245);
+  --color-plain-text: rgb(0, 0, 0);
+  --color-border-wrapper: rgb(151, 71, 255, 1);
+  --color-button: rgb(69, 157, 245);
+  --color-background-input: rgb(220, 220, 220);
+}
+
+.page {
+  padding: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 36rem;
+  height: 23.5rem;
+  margin: 0 auto;
+  border: 0.13rem dashed var(--color-border-wrapper);
+  border-radius: 0.3rem;
+  background-color: var(--color-background-input);
+  padding: 2rem;
+}
+
+.button-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.button-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.button_size_big_with_background {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  background-color: var(--color-button);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.button_size_big_with_background:hover {
+  box-shadow: 0rem 0.12rem 0.5rem 0.12rem var(--color-text-color-background);
+}
+
+.button_size_average_with_background {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  width: 5.5rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  background-color: var(--color-button);
+  padding: 0.5rem 0.19rem 0.5rem 0.19rem;
+}
+
+.button_size_average_with_background:hover {
+  box-shadow: 0rem 0.12rem 0.5rem 0.12rem var(--color-text-color-background);
+}
+
+.button_size_small_with_background {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  background-color: var(--color-button);
+  padding: 0.5rem;
+}
+
+.button_size_small_with_background:hover {
+  box-shadow: 0rem 0.12rem 0.5rem 0.12rem var(--color-text-color-background);
+}
+
+.button_with_background__text {
+  top: 0.5rem;
+  left: 2.5rem;
+  color: var(--color-text-color-background);
+  padding: 0.5rem;
+}
+
+.button_with_background__text:hover {
+  text-shadow: var(--color-text-color-background) 0.1rem 0.1rem 0.2rem;
+}
+
+.button_with_background__icon {
+  width: 0.75rem;
+  height: 0.75rem;
+  top: 0rem;
+  left: 0rem;
+  margin: 0.1rem 0rem 0rem 0.1rem;
+  background-image: url('../icon/filterwheit.svg');
+}
+
+.button_with_background__icon:hover {
+  -webkit-filter: drop-shadow(
+    0.1rem 0.1rem 0.2rem var(--color-text-color-background)
+  );
+  filter: drop-shadow(0.1rem 0.1rem 0.2rem var(--color-text-color-background));
+}
+
+.button_size_big_transparent_background {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.button_size_average_transparent_background {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  width: 5.5rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  padding: 0.5rem 0.19rem 0.5rem 0.19rem;
+}
+
+.button_size_small_transparent_background {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+.button_transparent_background__icon {
+  width: 0.75rem;
+  height: 0.75rem;
+  top: 0rem;
+  left: 0rem;
+  margin: 0.1rem 0rem 0rem 0.1rem;
+  background-image: url('../icon/filterblue.svg');
+}
+
+.button_transparent_background__icon:hover {
+  -webkit-filter: drop-shadow(
+    0.1rem 0.1rem 0.2rem var(--text-color-without-background)
+  );
+  filter: drop-shadow(
+    0.1rem 0.1rem 0.2rem var(--text-color-without-background)
+  );
+}
+
+.button_transparent_background__text {
+  top: 0.5rem;
+  left: 2.5rem;
+  color: var(--text-color-without-background);
+  padding: 0.5rem;
+}
+
+.button_transparent_background__text:hover {
+  text-shadow: var(--text-color-without-background) 0.1rem 0.1rem 0.2rem;
+}
+
+.button_transparent_background__iconblack {
+  width: 0.75rem;
+  height: 0.75rem;
+  top: 0rem;
+  left: 0rem;
+  margin: 0.1rem 0rem 0rem 0.1rem;
+  background-image: url('../icon/filterblack.svg');
+}
+
+.button_transparent_background__iconblack:hover {
+  -webkit-filter: drop-shadow(0.1rem 0.1rem 0.2rem var(--color-plain-text));
+  filter: drop-shadow(0.1rem 0.1rem 0.2rem var(--color-plain-text));
+}
+
+.button_transparent_background__textblack {
+  top: 0.5rem;
+  left: 2.5rem;
+  color: var(--color-plain-text);
+  padding: 0.5rem;
+}
+
+.button_transparent_background__textblack:hover {
+  text-shadow: var(--color-plain-text) 0.1rem 0.1rem 0.2rem;
+}
