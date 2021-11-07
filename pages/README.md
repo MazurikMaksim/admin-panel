@@ -1,0 +1,1 @@
+Верстка резиновго макета по примеру из Figma (https://www.figma.com/proto/idksYpZBxVhezpblAL1w5S/Order-list?node-id=88%3A4266&viewport=475%2C269%2C0.25&scaling=contain&hide-ui=1)
